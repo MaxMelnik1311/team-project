@@ -1,4 +1,7 @@
-/*
-   Import partials below
-*/
+@import './typography';
+@import './text';
+@import './variables';
 @import './normalize';
+h1 {
+    color: aqua;
+}

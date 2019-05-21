@@ -1,0 +1,19 @@
+.light {
+    @include acrom-300(20px);
+}
+
+.regular {
+    @include acrom-400(20px);
+}
+
+.medium {
+    @include acrom-500(20px);
+}
+
+.bold {
+    @include acrom-700(20px);
+}
+
+.extra {
+    @include acrom-800(20px);
+}
