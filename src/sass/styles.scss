@@ -1,7 +1,11 @@
+/*
+   Import partials below
+*/
 @import './normalize';
+@import './fonts';
 @import './typography';
-@import './text';
-@import './variables';
-@import './containers';
-@import './texts';
-
+@import './components/footer';
+@import './components/award';
+@import './components/card-award';
+@import './components/tender';
+@import './components/partners-list';

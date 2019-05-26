@@ -1,79 +1,29 @@
-@font-face {
-    font-family: 'Acrom';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Acrom Light'), local('Acrom-Light'),
-         url('../fonts/Acrom-Light.woff2') format('woff2'),
-         url('../fonts/Acrom-Light.woff') format('woff'); 
+body {
+  font-family: 'Acrom', sans-serif;
 }
 
-@mixin acrom-300($font-size) {
-    font-family: 'Acrom';
-    font-style: normal;
-    font-weight: 300;
-    font-size: $font-size;
+.title {
+  padding: 0 15px;
+  font-size: 20px;
+  color: #1b202a;
+  font-weight: bold;
+  line-height: 1.5;
 }
 
-@font-face {
-    font-family: 'Acrom';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Acrom Regular'), local('Acrom-Regular'),
-         url('../fonts/Acrom-Regular.woff2') format('woff2'),
-         url('../fonts/Acrom-Regular.woff') format('woff'); 
+.subtitle {
+  font-size: 16px;
+  color: #222;
+  font-weight: bold;
+  line-height: 1.313;
+  padding: 0 15px;
 }
 
-@mixin acrom-400($font-size) {
-    font-family: 'Acrom';
-    font-style: normal;
-    font-weight: 400;
-    font-size: $font-size;
+.subtitle-txt {
+  background-color: #edf0f2;
 }
-
-@font-face {
-    font-family: 'Acrom';
-    font-style: normal;
-    font-weight: 500;
-    src: local('Acrom Medium'), local('Acrom-Medium'),
-         url('../fonts/Acrom-Medium.woff2') format('woff2'),
-         url('../fonts/Acrom-Medium.woff') format('woff'); 
-}
-
-@mixin acrom-500($font-size) {
-    font-family: 'Acrom';
-    font-style: normal;
-    font-weight: 500;
-    font-size: $font-size;
-}
-
-@font-face {
-    font-family: 'Acrom';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Acrom Bold'), local('Acrom-Bold'),
-         url('../fonts/Acrom-Bold.woff2') format('woff2'),
-         url('../fonts/Acrom-Bold.woff') format('woff'); 
-}
-
-@mixin acrom-700($font-size) {
-    font-family: 'Acrom';
-    font-style: normal;
-    font-weight: 700;
-    font-size: $font-size;
-}
-
-@font-face {
-    font-family: 'Acrom';
-    font-style: normal;
-    font-weight: 800;
-    src: local('Acrom ExtraBold'), local('Acrom-ExtraBold'),
-         url('../fonts/Acrom-ExtraBold.woff2') format('woff2'),
-         url('../fonts/Acrom-ExtraBold.woff') format('woff'); 
-}
-
-@mixin acrom-800($font-size) {
-    font-family: 'Acrom';
-    font-style: normal;
-    font-weight: 800;
-    font-size: $font-size;
+@media (min-width: 768px) {
+  .title {
+    font-size: 30px;
+    line-height: 1.333;
+  }
 }

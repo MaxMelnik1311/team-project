@@ -1,0 +1,40 @@
+.tender {
+  background: url(../images/un.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 0 16px;
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.25;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 14px;
+    color: #6b6f7a;
+    line-height: 1.5;
+  }
+
+  .subtitle {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ====================================== */
+@media (min-width: 768px) {
+  .tender {
+    width: 50%;
+    margin: auto;
+    background-position: calc(100% - 20px) top;
+
+    .subtitle {
+      margin-left: 0;
+    }
+  }
+}
+@media (min-width: 1170px) {
+}

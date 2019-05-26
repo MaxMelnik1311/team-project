@@ -1,0 +1,159 @@
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.partner__img {
+  display: block;
+}
+.partner {
+  margin: 0 1rem 1rem;
+  // epam
+  &:nth-of-type(1) {
+    order: 1;
+  }
+  // kunnel
+  &:nth-of-type(2) {
+    order: 2;
+  }
+  //ciklum
+  &:nth-of-type(3) {
+    order: 4;
+  }
+  // crytek
+  &:nth-of-type(4) {
+    order: 3;
+  }
+  //softserv
+  &:nth-of-type(5) {
+    order: 6;
+  }
+  //globalLogic
+  &:nth-of-type(6) {
+    order: 7;
+  }
+  // goIt
+  &:nth-of-type(7) {
+    order: 9;
+  }
+  // alfa
+  &:nth-of-type(8) {
+    order: 8;
+  }
+  // inovecs
+  &:nth-of-type(9) {
+    order: 5;
+  }
+  //infopuls
+  &:nth-of-type(10) {
+    order: 10;
+  }
+  // grossum
+  &:nth-of-type(11) {
+    order: 15;
+  }
+  // templateMonster
+  &:nth-of-type(12) {
+    order: 16;
+  }
+  // luxoft
+  &:nth-of-type(13) {
+    order: 12;
+  }
+  // ubisoft
+  &:nth-of-type(14) {
+    order: 11;
+  }
+  // lenal
+  &:nth-of-type(15) {
+    order: 13;
+  }
+  // terrasoft
+  &:nth-of-type(16) {
+    order: 14;
+  }
+}
+
+@media (min-width: 748px) {
+  .partner {
+    margin: 0 1rem 1rem;
+    // epam
+    &:nth-of-type(1) {
+      order: 1;
+    }
+    // kunnel
+    &:nth-of-type(2) {
+      order: 2;
+    }
+    //inovecs
+    &:nth-of-type(3) {
+      order: 3;
+    }
+    // crytek
+    &:nth-of-type(4) {
+      order: 4;
+    }
+    //softserv
+    &:nth-of-type(5) {
+      order: 5;
+    }
+    //globalLogic
+    &:nth-of-type(6) {
+      order: 6;
+    }
+    // goIt
+    &:nth-of-type(7) {
+      order: 7;
+    }
+    // alfa
+    &:nth-of-type(8) {
+      order: 8;
+    }
+    // ciclum
+    &:nth-of-type(9) {
+      order: 9;
+    }
+    //infopuls
+    &:nth-of-type(10) {
+      order: 10;
+    }
+    // grossum
+    &:nth-of-type(11) {
+      order: 11;
+    }
+    // templateMonster
+    &:nth-of-type(12) {
+      order: 12;
+    }
+    // luxoft
+    &:nth-of-type(13) {
+      order: 13;
+    }
+    // ubisoft
+    &:nth-of-type(14) {
+      order: 14;
+    }
+    // lenal
+    &:nth-of-type(15) {
+      order: 15;
+    }
+    // terrasoft
+    &:nth-of-type(16) {
+      order: 16;
+    }
+  }
+
+  .partner {
+    margin: 0 0.5rem 2rem;
+  }
+
+  .partners-list {
+    margin: 44px 15px 40px 44px;}
+    .partners {
+
+    
+    .subtitle {
+      margin-bottom: 44px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.container-fluid {
+    &--header {
+      background-color: #181c27;
+      color: #fff;
+      min-height: 945px;
+    }
+  
+    &--footer {
+      background-image: url(../images/bg-footer--mobile.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      min-height: 1050px;
+    }
+  }
+  @media (min-width: 1200px) {
+      .container-fluid {
+        
+          &--footer {
+            background-image: url(../images/bg-footer--desktop.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            min-height: 1050px;
+          }
+        }
+    }
+  
+  // .col12-bg {
+  //   background-image: url(../image/un.png);
+  //   background-repeat: no-repeat;
+  //   background-position: left 100px top;
+  // }
+  // .row {
+  //   min-height: 479px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
