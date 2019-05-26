@@ -1,0 +1,159 @@
+.card {
+  &--award {
+    margin: 30px 0 65px;
+    position: relative;
+    z-index: 10;
+    box-shadow: -18px 18px 1px 2px hsla(0, 0%, 0%, 0.1),
+      0 15px 15px 15px hsla(0, 0%, 0%, 0.05);
+    counter-increment: num;
+  }
+
+  &__wrp {
+    height: 100%;
+    padding: 30px 25px;
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0;
+    line-height: 1.444;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 14px;
+    color: #6b6f7a;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  &__img-wrp {
+    text-align: center;
+
+    &--1 {
+      height: 157px;
+    }
+
+    &--2 {
+      height: 192px;
+    }
+
+    &--3 {
+      height: 150px;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    display: inline-block;
+  }
+
+  &::before {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background: #00eaff;
+    position: absolute;
+    top: 16px;
+    left: -14px;
+    z-index: 150;
+  }
+
+  &::after {
+    content: '0' counter(num);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-65%);
+    z-index: -1;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    color: #edf0f2;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+
+.txt-black {
+  color: #000;
+}
+
+/* ====================================== */
+@media (min-width: 768px) {
+  .card {
+    &__wrp {
+      height: calc(100% - 60px);
+    }
+  }
+}
+@media (min-width: 1170px) {
+  .subtitle {
+    margin-bottom: 0;
+  }
+
+  .card {
+    &--award {
+      margin: 0 0 65px;
+      position: relative;
+      z-index: 10;
+      box-shadow: none;
+    }
+
+    &__wrp {
+      padding: 30px 15px;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      // flex-direction: row;
+      // justify-content: space-between;
+    }
+
+    &__img-wrp {
+      float: right;
+      width: 40%;
+
+      // &--3 {
+      //   width: 60%;
+      // }
+
+      // &--3 .card__img {
+      //   position: absolute;
+      //   top: 0;
+      //   right: 16px;
+      // }
+    }
+
+    &__img {
+      height: auto;
+    }
+
+    &__txt {
+      // margin: 0 15px 0 0;
+      float: left;
+      width: 60%;
+    }
+
+    &::before {
+      width: 0;
+      height: 0;
+      background-color: transparent;
+    }
+
+    &::after {
+      font-size: 30px;
+      line-height: 0.7;
+      transform: rotate(-90deg);
+      z-index: 150;
+      top: -20px;
+      right: -14px;
+    }
+  }
+}

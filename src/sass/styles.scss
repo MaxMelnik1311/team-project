@@ -1,7 +1,11 @@
-@import './typography';
-@import './text';
-@import './variables';
+/*
+   Import partials below
+*/
 @import './normalize';
-h1 {
-    color: aqua;
-}
+@import './fonts';
+@import './typography';
+@import './components/footer';
+@import './components/award';
+@import './components/card-award';
+@import './components/tender';
+@import './components/partners-list';
