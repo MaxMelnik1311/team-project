@@ -1,0 +1,28 @@
+.container--fluid {
+    width: 260px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+
+    @media (min-width: 768px) {
+        width: calc(#{$col-768} * 12 + #{$gut-768} * 11);
+    }
+
+    @media (min-width: 1200px) {
+        width: calc(#{$column} * 12 + #{$gutter} * 24);
+    }
+}
+
+.container {
+    width: 260px;
+    margin: auto;
+
+    @media (min-width: 768px) {
+        width: calc(#{$col-768} * 12 + #{$gut-768} * 11);
+    }
+
+    @media (min-width: 1200px) {
+        width: calc(#{$column} * 12 + #{$gutter} * 24);
+    }
+}

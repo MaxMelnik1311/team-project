@@ -1,7 +1,8 @@
-@import './typography';
-@import './text';
-@import './variables';
 @import './normalize';
-h1 {
-    color: aqua;
-}
+@import './typography';
+@import './variables';
+@import './components/career-consultation';
+@import './components/container';
+@import './components/it-statistics';
+@import './components/own-way';
+@import './components/container-768';

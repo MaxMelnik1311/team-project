@@ -1,0 +1,172 @@
+.career-consultation {
+    background-color: #edf0f2;
+    position: relative;
+    height: 1094px;
+
+    @media (min-width: 768px) {
+        height: 570px;
+    }
+
+    @media (min-width: 1200px) {
+        height: 857px;
+    }
+}
+
+.section-header {
+    margin: 0;
+    letter-spacing: -1px;
+    @include acrom-700(20px);
+    line-height: 30px;
+
+    @media (min-width: 768px) {
+        line-height: 40px;
+        @include acrom-700(30px);
+        margin: auto;
+    }
+}
+
+.consultation-header {
+    padding: 28px 17px 6px 17px;
+    color: #222;
+    text-align: center;
+    margin-bottom: 26px;
+
+    @media (min-width: 768px) {
+        padding: 45px 0 60px 0;
+        width: calc(#{$col-768} * 8 + #{$gut-768} * 10);
+    }
+
+    @media (min-width: 1200px) {
+        padding: 78px 0 100px 0;
+        @include acrom-700(48px);
+        line-height: 60px;
+        letter-spacing: -2px;
+        width: calc(#{$column} * 12 + #{$gutter} * 18);
+    }
+}
+
+.consultation-items {
+    padding: 0 17px;   
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 0 $gutter;
+    }
+}
+
+
+.consultation-stage {
+    height: 229px;
+    width: 226px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: -20px 14px rgba(203, 206, 208, .18);
+    margin-bottom: 40px;
+
+    @media (min-width: 1200px) {
+        width: 351px;
+        height: 276px;
+        box-shadow: -20px 18px rgba(203, 206, 208, .18);
+        margin-bottom: 75px;
+    }
+
+    &__number {
+        margin: 0;
+        color: #fbfcfb;
+        @extend %monts-bold;            
+        position: absolute;
+        right: 0;
+        top: -35px;
+        z-index: -3;
+        font-size: 50px;
+
+        @media (min-width: 768px) {
+            font-size: 70px;
+            top: -50px;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 150px;
+            top: -110px;
+        }
+    }
+
+    &__description {
+        @include acrom-400(16px);
+        letter-spacing: -1px;
+        line-height: 22px;
+        color: #222222;
+        padding: 40px 45px 0 30px;
+        margin: 0;
+
+        @media (min-width: 1200px) {
+            @include acrom-400(18px);
+            line-height: 35px;
+        }
+    }
+
+    &__description::before {
+        display: block;
+        content: "";
+        width: 60px;
+        height: 2px;
+        background-color: $text-color-1;
+        position: absolute;
+        left: -13px;
+        top: 24px;
+    }
+}
+
+.highlight--bold {
+    font-weight: 700;
+}
+
+.btn-box {
+    margin: auto;
+    width: 225px;
+
+    @media (min-width: 768px) {
+        width: calc(#{$col-768} * 8 + #{$gut-768} * 9);
+    }
+
+    @media (min-width: 1200px) {
+        width: calc(#{$column} * 8 + #{$gutter} * 18);
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $button-color;
+    color: #fff;
+    @include acrom-800(14px);
+    line-height: 20px;
+    border: none;
+
+    @media (min-width: 768px) {
+        width: calc(#{$col-768} * 8 + #{$gut-768} * 9);
+        text-transform: none;
+        @include acrom-800(18px);
+    }
+
+    @media (min-width: 1200px) {
+        @include acrom-800(25px);
+        width: calc(#{$column} * 8 + #{$gutter} * 18);
+    }
+}
+
+.btn-top {
+    height: 105px;
+
+    @media (min-width: 768px) {
+        height: 70px;
+    }
+
+    @media (min-width: 1200px) {
+        height: 110px;
+    }
+}

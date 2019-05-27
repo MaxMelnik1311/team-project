@@ -1,0 +1,155 @@
+.own-way {
+    position: relative;
+    height: 562px;
+    background-image: url(/images/bg-layer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: 768px) {
+        background-image: url(/images/bg-layer-768.png);
+        height: 605px;
+    }
+
+    @media (min-width: 1200px) {
+        background-image: url(/images/bg-layer-1200.png);
+        height: 643px;
+    }
+
+    &__header {
+        @include acrom-800(16px);
+        letter-spacing: -1px;
+        line-height: 20px;
+        color: #ffffff;
+        padding: 30px 18px 24px 0;
+        margin: 0;
+
+        @media (min-width: 768px) {
+            @include acrom-800(22px);
+            line-height: 30px;
+            width: calc(#{$col-768} * 10 + #{$gut-768} * 10);
+            margin-left: calc(#{$col-768} + #{$gut-768});
+            padding: 53px 0 33px 0;
+        }
+
+        @media (min-width: 1200px) {
+            @include acrom-800(30px);
+            line-height: 35px;
+            order: 1;
+            margin-left: $gutter;
+            padding-top: 100px;
+            padding-bottom: 55px;
+        }
+    }
+
+    &__description-box {
+        @media (min-width: 768px) {
+            margin: 0;
+            margin-left: calc(#{$col-768} + #{$gut-768});
+            margin-bottom: 25px;
+            width: calc(#{$gut-768} * 4 + #{$col-768} * 6);
+        }
+
+        @media (min-width: 1200px) {
+            order: 4;
+            padding-top: 255px;
+        }
+    }
+
+    &__description--extrabold {
+        @include acrom-800(14px);
+        letter-spacing: -1px;
+        line-height: 22px;
+        color: #ffffff;
+        margin: 0;
+
+        @media (min-width: 768px) {
+            @include acrom-800(16px)
+        }
+
+        @media (min-width: 1200px) {
+            @include acrom-800(18px);
+            line-height: 35px;
+        }
+    }
+
+    &__description--extrabold::before {
+        display: block;
+        content: "";
+        width: 60px;
+        height: 2px;
+        background-color: $text-color-1;
+        margin-bottom: 20px;
+    }
+
+    &__description--regular {
+        margin: 0;
+        @include acrom-400(14px);
+        letter-spacing: -1px;
+        line-height: 22px;
+        color: #ffffff;
+        padding-right: 5px;
+        padding-bottom: 30px;
+
+        @media (min-width: 768px) {
+            @include acrom-400(16px);
+        }
+
+        @media (min-width: 1200px) {
+            @include acrom-400(18px);
+            line-height: 35px;
+        }
+    }
+
+    &__items {
+        @media (min-width: 1200px) {
+            display: flex;
+            height: 643px;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.button-preview {
+    @include acrom-700(20px);
+    letter-spacing: -1px;
+    line-height: 30px;
+    color: $text-color-1;
+    padding-bottom: 30px;
+    margin: 0;
+
+    @media (min-width: 768px) {
+        @include acrom-700(40px);
+        line-height: 50px;
+        letter-spacing: -2px;
+        margin-left: calc(#{$col-768} + #{$gut-768});
+        width: calc(#{$col-768} * 9 + #{$gut-768} * 9);
+    }
+
+    @media (min-width: 1200px) {
+        @include acrom-700(48px);
+        order: 2;
+        margin-left: $gutter;
+    }
+}
+
+.btn-low {
+    height: 70px;
+
+    @media (min-width: 768px) {
+        margin-left: calc(#{$col-768} + #{$gut-768});
+        text-transform: uppercase;
+        width: 531px;
+        @include acrom-800(18px);
+    }
+
+    @media (min-width: 1200px) {
+        order: 3;
+        width: calc(#{$column} * 7 + #{$gutter} * 14);
+        height: 109px;
+        @include acrom-800(30px);
+        text-transform: uppercase;
+        margin-left: $gutter;
+    }
+}
