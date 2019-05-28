@@ -131,6 +131,8 @@
         @include acrom-700(48px);
         order: 2;
         margin-left: $gutter;
+        width: calc(#{$column} * 8 + #{$gutter} * 14);
+        margin-bottom: 50px;
     }
 }
 
